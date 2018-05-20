@@ -25,7 +25,7 @@
         fullStyle: [
           `/*
 * Inspired by http://strml.net/ 
-* forked from https://github.com/sitexa/anires
+* Forked from https://github.com/sitexa/anires
 * 特别感谢https://github.com/sitexa（南方大神）
 * 源码地址 https://github.com/WenTao-Love/anires
 * 大家好，我是许文涛。
@@ -184,18 +184,20 @@ html{
 
 项目经历
 ----
-[中国人寿深圳市分公司]
-
-主要负责移动端H5开发,SqlServer存储过程开发,前端组件开发,Java/C#前后端开发,Java架构设计,救火员
+### 中国人寿深圳市分公司
+   
+-- 
+** 主要负责移动端H5开发,SqlServer存储过程开发,前端组件开发,Java/C#前后端开发,Java架构设计,救火员 **
 
 1. 使用SpringBoot + Vue2 + mybatis3(Mapper+PageHelper/Mybatis-plus)搭建前后端分离，多数据源快速开发架构
 2. 使用nutz+zbus实现统一应用用户访问日志收集平台
 3. 使用netty+dom4j工行/中行/交行银企直联接口开发
-4. 使用ThinkJs+markdown完成保险条款编辑器
+4. 使用ThinkJs+markdown完成保险条款编辑器  
 
-[深圳市信义科技有限公司/上海华腾广州分公司]
-
-主要负责JavaWeb前后端开发
+### 深圳市信义科技有限公司/上海华腾广州分公司
+   
+-- 
+** 主要负责JavaWeb前后端开发 **
 
 教育经历
 ----
@@ -217,9 +219,6 @@ html{
 
 跑步
 ----
-
-已经完成3次全马全程
-
 
 鸣谢
 ----
