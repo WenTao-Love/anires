@@ -2,6 +2,7 @@ var path = require('path')
 var utils = require('./utils')
 var config = require('../config')
 var vueLoaderConfig = require('./vue-loader.conf')
+var VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
@@ -30,6 +31,7 @@ module.exports = {
       'components': resolve('src/components')
     }
   },
+  mode: process.env.NODE_ENV,
   module: {
     rules: [
       {
@@ -59,5 +61,9 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+  plugins: [
+    // make sure to include the plugin for the magic
+    new VueLoaderPlugin()
+  ]
 }

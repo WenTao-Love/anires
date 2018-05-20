@@ -14,7 +14,8 @@
   import StyleEditor from './components/StyleEditor'
   import ResumeEditor from './components/ResumeEditor'
   import ThankEditor from './components/ThankEditor'
-  import './assets/reset.css'
+  // import './assets/reset.css'
+  import './assets/normalize.css'
 
   export default {
     name: 'app',
@@ -30,10 +31,10 @@
         enableHtml: false,
         fullStyle: [
           `/*
-* Inspired by http://strml.net/
-* 源码地址 https://github.com/sitexa/anires
-* 大家好，我是南方。
-* 我来写一份简历！
+* Inspired by http://strml.net/ && forked from https://github.com/sitexa/anires
+* 源码地址 https://github.com/WenTao-Love/anires
+* 大家好，特别感谢https://github.com/sitexa（南方大神），我是许文涛。
+* 我来写一份简历！（PC版）
 */
 
 /* 给所有元素加上过渡效果 */
@@ -127,7 +128,7 @@ html{
   background: #ddd;
 }
 `, `/* 写封感谢信。
- * 感谢大家对我的关注。
+ * 感谢南方大神的分享
  */
 .styleEditor{
     width:50vw;height:70vh;
@@ -181,19 +182,23 @@ html{
 `],
         currentMarkdown: '',
         currentThankMarkdown: '',
-        fullMarkdown: `南方
+        fullMarkdown: `许文涛
 ====
+高级Java开发/初级架构师/大数据开发/区块链开发
 
-坐标：湖南长沙。
+勾搭方式
+----
 
-资深软件工程师，资深产品经理，高级项目经理。现为自由职业。
+* 微信：13827104709
+* 邮箱：zhanjiangxuwen@126.com
+* 坐标：广东深圳
 
 技能
 ====
 
 数据库设计
 ----
-  - 结构化数据库设计
+  - 结构化数据库设计(存储过程)
   - noSQL设计
 
 后端开发
@@ -205,92 +210,80 @@ html{
   - 交易系统
   - 支付系统
   - 社区系统
-  - 博客系统
-  - 公众号开发
-  - 小程序开发
-  - API接口开发
+  - 报表开发
 
 前端开发
 ----
   - Web前端开发
-  - 移动终端(Native App, Hybrid App)
-
-产品设计
-----
-  - 智慧旅游项目
-  - 运动健康云平台
-  - 社区支持农业O2O项目
-  - 省级环境监控平台
-  - 高速公路异地处罚系统
-  - 环保局办公自动化系统
-  - 保险公司数据迁移项目
-  - 啤酒厂供应链项目
-  - 货运代理系统
-  - 集装箱管理系统
-  - 滞期费管理项目
 
 技术及语言
 ----
-  - Java: SpringMVC, SpringCloud, Hibernate, iBatis, spark, sql2o, HikariCP, freemarker, okHttp, retrofit, RxJava
-  - Kotlin: ktor, exposed, anko
-  - Node.js: express, angular, ionic, react, cordova, meteor, electron, axios
-  - Swift: Vapor, ReactiveSwift
-  - Golang: hugo, beego, gorm, sqlx, matcha
-  - Python: tushare, pandas, numpy, matplotlib
-  - DotNet and PHP
-  - DB: SQLServer, Oracle, MySQL/MariaDB, MongoDB, graphQL, redis, memcached
+  - Java: SpringMVC, SpringCloud, Hibernate, Mybatis(iBatis), beetl,beetlsql, netty, JBoot, nutz ...
+  - Kotlin
+  - Node.js: vue2.x, axios, vue-resource, ThinkJs
+  - JavaScript: JQuery, Echart, Bootstrap, AmazeUI, element, mini, mint-ui, iview admin
+  - Html5 and CSS3
+  - Golang
+  - Python
+  - DotNet and C# and Linq
+  - DB: SQLServer, Oracle, MySQL/MariaDB, MongoDB, redis, memcached
   - WebServer: apache, nginx, tomcat, netty, jetty
-  - OS: Ubuntu, CentOS, MacOS, Windows
-  - Others: Docker, git, Xmind，Axure
+  - OS: Ubuntu, CentOS, Windows
+  - Others: Docker, git, svn, Axure, Mindmanager
 
 工作经历
 ----
 
-1. 湖南融耀健康管理有限公司
-2. 湖南三英特旅游智能技术有限公司
-3. 合肥蓝盾科技有限公司
-4. 上海易保网络有限公司
-5. 厦门海环计算机软件有限公司
+1. 2015.09 - 至今 中国人寿深圳市分公司
+2. 2014.05 - 2015.09 深圳市信义科技有限公司
+3. 2012.02 - 2013.04 上海华腾广州分公司
+
+项目经历
+----
+[中国人寿深圳市分公司]
+
+主要负责移动端H5开发,SqlServer存储过程开发,前端组件开发,Java/C#前后端开发,Java架构设计,救火员
+
+1. 使用SpringBoot + Vue2 + mybatis3(Mapper+PageHelper/Mybatis-plus)搭建前后端分离，多数据源快速开发架构
+2. 使用nutz+zbus实现统一应用用户访问日志收集平台
+3. 使用netty+dom4j工行/中行/交行银企直联接口开发
+4. 使用ThinkJs+markdown完成保险条款编辑器
+
+[深圳市信义科技有限公司/上海华腾广州分公司]
+
+主要负责JavaWeb前后端开发
 
 教育经历
 ----
 
-1. 华东理工大学 环境工程学士
-2. 厦门大学 系统工程硕士
+1. 2008.09-2012.07 广东商学院 计算机科学与技术 学士
 
-文章
+证书
 ----
 
-* [故土难离（我的父亲母亲）](https://www.meipian.cn/qacqfbz?uuid=d541c15eef694065bc9d1ac9a07925a2)
-* [油腻腻的中年（小诗）](https://www.meipian.cn/wjaz3zh?uuid=ca1cd053b717451da781786de44e66e7)
-* [生命（老四们的蝼蚁人生）](https://www.meipian.cn/vc4pr59?uuid=799c98f5a187405c94c86f7da7788869)
-* [大健康商业模式](http://www.sitexa.org/technology/%E5%A4%A7%E5%81%A5%E5%BA%B7%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F.html)
-* [社区社交商业模型](http://www.sitexa.org/other/%E7%A4%BE%E5%8C%BA%E7%A4%BE%E4%BA%A4%E5%95%86%E4%B8%9A%E6%A8%A1%E5%9E%8B.html)
+* 信息系统项目管理师
 
-链接
+其他
+====
+
+读书
 ----
 
-* [GitHub](https://github.com/sitexa)
-* [技术博客](http://www.sitexa.org)
-* [南方时代](http://www.sitexa.net)
-* [神秘湘鄂西](http://www.sitexa.cn)
-* [我的简历故事(程序人生公众号文章)](https://mp.weixin.qq.com/s/5rsB956EPVm0FoFOe6xYTg)
+《netty实战》,《图解Java多线程设计模式》,《JavaScript框架设计(第2版)》,《锋利的SQL》,《架构真经》,《区块链开发指南》 ...
 
-勾引方式
+跑步
 ----
 
-* 微信：xnpeng
+已经完成3次全马全程
+
 
 `, thanksMarkdown: `
 鸣谢
 ----
 
-* 这段时间，我有些诚煌诚恐。我的简历被很多人关注(49842），我码的那几篇文章也有很多人点击(20095），微信好友增加了2000多人。"程序人生"公众号文章（我的简历故事）阅读量超过十万+。
-* 有很多企业向我发出了面试邀请，有很多创业团队向我伸出了橄榄枝，一些朋友给我提出非常好的建议，还有很多同学希望跟我进行技术交流，甚至有些企业问我能否承接外包业务。
-* 于是，我受命下山，到了深圳、珠海、北京、天津等地，拜访了一些老板，结识了一些新朋友，见了一些同学和老同事，感触很多，收获很大。IT行业正在发生深刻的变化，新技术、新模式、新思维、新业态，层出不穷，各种探索，各种炒作，让人眼花缭乱。
-* 我对自己也有了一个新的认识。我逐渐发现，我不是去找一份工作，而是在寻找一些机会，一些志同道合的伙伴，一份激动人心的事业。很荣幸，已经有几个朋友跟我达成了意向，准备组建团队。
-* 到底做什么项目呢？我只能简单地说，社交+电商+区块链。肯定有人要说，这个题目太大了，是蹭热度。我不这样想。我以前对社交的思考中，一个重要的因素就是信任关系，而对电商的思考中，去中心化是一个核心考量。而区块链技术不正是解决信任机制和去中心化的利器么？
-* 在此，我欢迎有兴趣的朋友加入我们，尽快推进项目的实施。（微信：xnpeng）
+* 我的求职意向是高级Java开发/初级架构师/大数据开发/区块链开发
+* 我的简约版简历：https://wentao-love.github.io/resume/
+* 再次特别感谢 https://github.com/sitexa （南方大神）的分享！
 
   `
       }
